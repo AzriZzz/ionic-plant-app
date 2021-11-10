@@ -6,6 +6,10 @@ const routes: Routes = [
   {
     path: '',
     component: HomePage,
+  },
+  {
+    path: 'user-login',
+    loadChildren: () => import('./user-login/user-login.module').then( m => m.UserLoginPageModule)
   }
 ];
 
